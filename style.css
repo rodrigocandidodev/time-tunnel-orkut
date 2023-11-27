@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.warning-banner {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    background-color: #000000;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.warning-title {
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+}
+div.warning-title span:nth-child(1) {
+    font-weight: 700;
+}
