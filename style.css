@@ -11,6 +11,9 @@
     --google-default-button-color-red:#d14836;
     --google-defautl-button-border-color-red: #b0281a;
     --google-default-button-color-dark-red: #c53727;
+    --color-default-white: #ffffff;
+    --color-green: #199f19;
+    --color-dark-green: #008000;
 }
 /* Reset */
 * {
@@ -19,7 +22,7 @@
     box-sizing: border-box;
 }
 .warning-banner {
-    color: #ffffff;
+    color: var(--color-default-white);
     font-family: 'Roboto', sans-serif;
     font-size: small;
     background-color: #000000;
@@ -67,11 +70,12 @@ header.google-bar {
     border-radius: 2px;
 }
 .signup-button a {
-    color: #ffffff;
+    color: var(--color-default-white);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
     font-size: 11px;
+    transition: all 0.3s ease-in-out;
 }
 .signup-button:hover {
     background-color: var(--google-default-button-color-dark-red);
@@ -155,10 +159,11 @@ input[type="submit"] {
     margin-top: 1rem;
     padding: 0.5rem;
     border-radius: 2px;
-    color: #ffffff;
+    color: var(--color-default-white);
     font-weight: bold;
     font-size: 11px;
     border: solid var(--google-default-button-border-color-blue) 1px;
+    transition: all 0.3s ease-in-out;
 }
 input[type="submit"]:hover {
     background-color: var(--google-default-button-color-dark-blue);
@@ -173,6 +178,21 @@ input[type="submit"]:hover {
 .remember-box span {
     font-weight: normal;
     font-size: 0.9rem;
+}
+.access-without-account {
+    background-color: var(--color-green);
+    margin-top: 0.5rem;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: solid var(--color-dark-green) 1px;
+    transition: all 0.3s ease-in-out;
+}
+.access-without-account:hover {
+    background-color: var(--color-dark-green)
+}
+.access-without-account > a {
+    color: var(--color-default-white);
 }
 /* blog */
 .blog-wrapper {
@@ -240,6 +260,7 @@ footer.google-footer-bar {
     .sign-in {
         margin-top: 1rem;
         width: 100%;
+        height: 21rem;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -249,7 +270,7 @@ footer.google-footer-bar {
     }
     .sign-in {
         width: 45%;
-        height: 20rem;
+        height: 21rem;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -259,6 +280,7 @@ footer.google-footer-bar {
     }
     .sign-in {
         width: 30%;
+        height: 21rem;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -268,6 +290,7 @@ footer.google-footer-bar {
     }
     .sign-in {
         width: 30%;
+        height: 21rem;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -277,5 +300,6 @@ footer.google-footer-bar {
     }
     .sign-in {
         width: 30%;
+        height: 21rem;
     }
 }

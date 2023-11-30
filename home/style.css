@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    /* Orkut default */
+    --color-white-orkut-default: #ffffff;
+    --color-black-orkut-default: #000000;
+    --color-dark-blue-orkut-default-link: #4c7da8;
+    --color-blue-orkut-default: #93baf3;
+    --color-blue-orkut-default-active: #73abf5;
+    --color-blue-orkut-default-background: #d9e6f7;
+    --padding-orkut-default: 10em;
+    --border-radius-orkut-default: 0.3em;
+
+
+    /* Rodrigo default */
+    --color-black-rodrigo-default: #000000;
+    --color-white-rodrigo-default: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-blue-orkut-default-background);
+}
+ /* warning */
+.warning-banner {
+    color: var(--color-white-rodrigo-default);
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    background-color: var(--color-black-rodrigo-default);
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.warning-title {
+    display: flex;
+    flex-direction: column;
+    width: 14em;
+}
+div.warning-title span:nth-child(1) {
+    font-weight: 700;
+}
+
+/* wrapper */
+.wrapper {
+    font-family: 'Arial', sans-serif;
+}
+
+/* google bar */
+header.google-bar {
+    background-color: var(--color-blue-orkut-default);
+    min-height: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--padding-orkut-default);
+    padding-right: var(--padding-orkut-default);
+}
+
+nav.google-services ul, nav.user-settings ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav.google-services ul {
+    gap: 1em;
+}
+nav.user-settings ul {
+    gap: 0.5em;
+}
+nav.google-services ul > li, nav.user-settings ul > li {
+    list-style: none;
+    color: var(--color-white-orkut-default);
+    
+}
+nav.google-services ul li > a, nav.user-settings ul li > a {
+    text-decoration: none;
+    color: var(--color-white-orkut-default);
+}
+nav.user-settings ul > li:nth-child(1) {
+    font-weight: bold;
+}
+nav.user-settings ul > li:nth-child(2) {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-left: solid var(--color-white-orkut-default) 1px;
+    border-right: solid var(--color-white-orkut-default) 1px;
+}
+
+/* main content */
+main a {
+    color: var(--color-dark-blue-orkut-default-link);
+}
+main.main-content {
+    padding-left: var(--padding-orkut-default);
+    padding-right: var(--padding-orkut-default);
+}
+
+/* top menu */
+.top-menu, .top-menu > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+.top-menu nav ul {
+    display: flex;
+    gap: 0.7em;
+    align-items: center;
+}
+.top-menu nav ul > li {
+    list-style: none;
+    background-color: var(--color-blue-orkut-default);
+    padding: 0.5em;
+    border-radius: var(--border-radius-orkut-default);
+    transition: all 0.3s ease-in-out;
+}
+.top-menu nav ul > li:hover {
+    background-color: var(--color-blue-orkut-default-active);
+}
+.top-menu nav ul > li.active {
+    background-color: var(--color-blue-orkut-default-active);
+}
+.top-menu nav ul li a {
+    text-decoration: none;
+    color: var(--color-white-orkut-default);
+}
+.top-menu {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.border {
+    border: solid 1px rgb(255, 0, 55);
+}
